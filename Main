@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        Product[] productsArray = new Product[5];
+
+        productsArray[0] = new Product("Samsung 325 XL", "01.02.2025", "Samsung Corp.", "Корея", 5599, true);
+        productsArray[1] = new Product("iPhone 15 Pro", "15.09.2024", "Apple Inc.", "США", 1299, false);
+        productsArray[2] = new Product("Xiaomi", "20.03.2024", "Xiaomi Inc.", "Китай", 799, true);
+        productsArray[3] = new Product("LG", "10.05.2024", "LG Electronics", "Южная Корея", 1499, false);
+        productsArray[4] = new Product("Sony", "01.01.2025", "Sony Corp.", "Япония", 399, true);
+
+        
+        for (Product product : productsArray) {
+            product.printInfo();
+            System.out.println(); 
+        }
+    }
+}
